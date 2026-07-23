@@ -1,3 +1,4 @@
+
 # Neurofive ML Track 🚀
 
 This repository contains my tasks and progress for the Neurofive Machine Learning Track.
@@ -47,3 +48,13 @@ In this task, I built my very first classification model to predict passenger su
 
 ### Key Insights:
 The model successfully learned the survival patterns, achieving a solid accuracy score. The confusion matrix allowed me to visualize exactly where the model made correct predictions versus where it made false alarms, proving the value of proper data preparation before modeling.
+
+## Task 4: House Price Prediction (Linear Regression)
+In this task, I shifted from classification to regression by predicting continuous values. I built a Linear Regression model using the California Housing dataset to predict house prices based on selected features like median income and house age.
+
+### Key Steps & Evaluation:
+* **Feature Selection:** Selected key features (MedInc, HouseAge, AveRooms, AveOccup) to train the model.
+* **Model Training:** Trained a `LinearRegression` model using `scikit-learn`.
+* **Evaluation:** Calculated the RMSE (0.81) and R² score (0.50) to measure prediction accuracy.
+* **Visualization:** Plotted a scatter chart comparing actual versus predicted prices, showing a solid trend along the perfect prediction line.
+
