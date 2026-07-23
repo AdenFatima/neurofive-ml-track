@@ -35,3 +35,15 @@ In this task, I prepared the Titanic dataset for machine learning by handling mi
 
 ### Key Insights & Conclusion:
 Visual analysis revealed that **Sex (Gender)** and **Pclass (Passenger Class)** most significantly affected survival. The bar chart showed females having a much higher survival rate, while the heatmap indicated a strong negative correlation (-0.34) between `Pclass` and `Survived` (meaning higher-class passengers were prioritized).
+
+## Task 3: Machine Learning Model (Logistic Regression)
+In this task, I built my very first classification model to predict passenger survival based on the cleaned EDA data.
+
+### Key Steps Performed:
+* **Feature Encoding:** Converted categorical columns (`Sex`, `Embarked`) into numerical format using One-Hot Encoding (`pd.get_dummies`). Dropped non-predictive text columns.
+* **Train/Test Split:** Divided the dataset into 80% training data and 20% testing data.
+* **Model Training:** Trained a `LogisticRegression` classification model.
+* **Evaluation:** The model achieved an **Accuracy Score of 81.01%**. I also generated a Confusion Matrix to analyze True Positives (55), True Negatives (90), False Positives (15), and False Negatives (19).
+
+### Key Insights:
+The model successfully learned the survival patterns, achieving a solid accuracy score. The confusion matrix allowed me to visualize exactly where the model made correct predictions versus where it made false alarms, proving the value of proper data preparation before modeling.
