@@ -69,12 +69,6 @@ In this task, I evaluated the Titanic classification model beyond simple accurac
 ### Before/After Comparison
 | Metric | Original Model | Tuned Model |
 | :--- | :--- | :--- |
-| **Accuracy** | 81.01% | (Check your output and add the new % here) |
-| **Best Parameters** | Default | (Add best parameters from your output here) |
-
-### Before/After Comparison
-| Metric | Original Model | Tuned Model |
-| :--- | :--- | :--- |
 | **Accuracy** | 81.01% | 78.21% |
 | **Best Parameters** | Default (C=1.0, solver='lbfgs') | C=0.1, solver='liblinear' |
 
