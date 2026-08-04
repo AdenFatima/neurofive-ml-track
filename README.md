@@ -58,3 +58,24 @@ In this task, I shifted from classification to regression by predicting continuo
 * **Evaluation:** Calculated the RMSE (0.81) and R² score (0.50) to measure prediction accuracy.
 * **Visualization:** Plotted a scatter chart comparing actual versus predicted prices, showing a solid trend along the perfect prediction line.
 
+## Task 5: Model Evaluation & Hyperparameter Tuning
+In this task, I evaluated the Titanic classification model beyond simple accuracy and used hyperparameter tuning to find the best possible settings for the algorithm.
+
+### Key Steps Performed:
+* **Advanced Evaluation:** Generated a `classification_report` to analyze Precision, Recall, and F1-score. I learned that accuracy can be misleading in imbalanced datasets because a model could just guess the majority class and score high while failing to detect the minority class.
+* **Hyperparameter Tuning:** Used `GridSearchCV` to systematically test different combinations of hyperparameters (`C` and `solver`) for the `LogisticRegression` model.
+* **Comparison:** Compared the tuned model's performance with the original default model to observe any improvements in the metrics. 
+
+### Before/After Comparison
+| Metric | Original Model | Tuned Model |
+| :--- | :--- | :--- |
+| **Accuracy** | 81.01% | (Check your output and add the new % here) |
+| **Best Parameters** | Default | (Add best parameters from your output here) |
+
+### Before/After Comparison
+| Metric | Original Model | Tuned Model |
+| :--- | :--- | :--- |
+| **Accuracy** | 81.01% | 78.21% |
+| **Best Parameters** | Default (C=1.0, solver='lbfgs') | C=0.1, solver='liblinear' |
+
+**Note on Results:** The tuned model showed a slightly lower accuracy on this specific test set. This is a common occurrence because `GridSearchCV` uses 5-fold cross-validation to find the most generalized and stable parameters across multiple data splits, whereas the default model might have slightly overfitted to our single random train/test split.
