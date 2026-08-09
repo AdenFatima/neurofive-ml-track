@@ -73,3 +73,16 @@ In this task, I evaluated the Titanic classification model beyond simple accurac
 | **Best Parameters** | Default (C=1.0, solver='lbfgs') | C=0.1, solver='liblinear' |
 
 **Note on Results:** The tuned model showed a slightly lower accuracy on this specific test set. This is a common occurrence because `GridSearchCV` uses 5-fold cross-validation to find the most generalized and stable parameters across multiple data splits, whereas the default model might have slightly overfitted to our single random train/test split.
+
+## Task 6: Customer Churn Prediction (Business Problem)
+In this task, I tackled a real-world business problem by predicting customer churn using the Telco Customer Churn dataset.
+
+### Key Steps & Evaluation:
+* **Data Preprocessing:** Cleaned numeric columns (`TotalCharges`) and encoded categorical variables. 
+* **Model Comparison:** Trained and compared two models:
+    * **Logistic Regression:** Achieved an accuracy of **82.04%**.
+    * **Decision Tree Classifier:** Achieved an accuracy of **80.62%**.
+* **Business Insights (Feature Importance):** Used the Decision Tree to extract the top 3 features driving customer churn:
+    1. `tenure` (How long they stay)
+    2. `InternetService_Fiber optic`
+    3. `TotalCharges` (Overall billing)
