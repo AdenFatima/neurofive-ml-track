@@ -96,3 +96,18 @@ In this task, I elevated my code to industry standards by building a scikit-lear
 * **ColumnTransformer:** Used `SimpleImputer` and `StandardScaler` for numerical columns, and `OneHotEncoder` for categorical columns.
 * **Pipeline Creation:** Chained the preprocessing steps with a `LogisticRegression` model into a single, reusable `Pipeline` object.
 * **Model Serialization:** Successfully saved the entire pipeline using `joblib` (`titanic_pipeline.pkl`) for future deployment, ensuring that any new raw data fed into the model will automatically undergo the exact same preprocessing steps.
+
+## Task 8: Ensemble Learning (Random Forest vs XGBoost)
+In this task, I upgraded from single models to powerful ensemble methods using the Telco Customer Churn dataset.
+
+### Key Steps Performed:
+* **Model Training:** Trained a `RandomForestClassifier` and an `XGBClassifier` alongside a baseline `DecisionTreeClassifier`.
+* **Feature Importance Analysis:** Visualized and compared the top predictive features. It was fascinating to see how they differ: **Random Forest** prioritized continuous variables like `TotalCharges` and `tenure`, while **XGBoost** heavily prioritized categorical business logic like `InternetService_Fiber optic` and `Contract_Two year`.
+* **Algorithm Comparison:** Documented the core architectural difference between parallel ensemble methods (Bagging/Random Forest) and sequential ensemble methods (Boosting/XGBoost).
+
+### Model Performance Comparison
+| Model Type | Algorithm | Metric (Accuracy) |
+| :--- | :--- | :--- |
+| **Baseline (Single)** | Decision Tree | 80.62% |
+| **Ensemble (Bagging)** | Random Forest | 78.92% |
+| **Ensemble (Boosting)** | XGBoost | 79.42% |
