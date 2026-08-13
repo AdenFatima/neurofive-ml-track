@@ -86,3 +86,13 @@ In this task, I tackled a real-world business problem by predicting customer chu
     1. `tenure` (How long they stay)
     2. `InternetService_Fiber optic`
     3. `TotalCharges` (Overall billing)
+ 
+
+## Task 7: Build a Proper ML Pipeline with Feature Engineering
+In this task, I elevated my code to industry standards by building a scikit-learn `Pipeline`. I used the Titanic dataset to automate preprocessing and model training.
+
+### Key Steps Performed:
+* **Feature Engineering:** Created two new features: `FamilySize` (combining `SibSp` and `Parch`) and `IsAlone` to provide better insights into passenger survival.
+* **ColumnTransformer:** Used `SimpleImputer` and `StandardScaler` for numerical columns, and `OneHotEncoder` for categorical columns.
+* **Pipeline Creation:** Chained the preprocessing steps with a `LogisticRegression` model into a single, reusable `Pipeline` object.
+* **Model Serialization:** Successfully saved the entire pipeline using `joblib` (`titanic_pipeline.pkl`) for future deployment, ensuring that any new raw data fed into the model will automatically undergo the exact same preprocessing steps.
