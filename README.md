@@ -123,3 +123,11 @@ In this task, I addressed the "accuracy trap" associated with highly imbalanced 
     * Trained an initial model on the imbalanced data. 
     * Retrained the model on the SMOTE-balanced data.
     * Compared the results: The SMOTE model showed improved **Recall** for the minority class, meaning it successfully became much better at actually catching customers who are about to leave, rather than just playing the accuracy numbers game.
+ 
+## Task 10: Deploy Your Model as a Live Web App
+In this final task, I transitioned from model building to model deployment, turning my saved ML Pipeline into an interactive, public-facing web application.
+
+### Key Steps Performed:
+* **Web App Creation:** Built a user-friendly frontend using `Streamlit`, allowing users to input passenger data through interactive sliders and dropdowns. The UI was customized with a desaturated dark theme, ensuring colors merge smoothly into the dark canvas for a sleek, professional aesthetic.
+* **Model Integration:** Integrated the `titanic_pipeline.pkl` model using `joblib`. Because the pipeline inherently handles all data preprocessing (scaling, encoding, imputing), the app can take raw user inputs and process them seamlessly in real-time without breaking.
+* **Cloud Deployment:** Successfully deployed the application to Streamlit Community Cloud, bridging the gap between a Jupyter Notebook and a live product accessible to non-technical users globally.
