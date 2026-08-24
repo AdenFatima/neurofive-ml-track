@@ -111,3 +111,14 @@ In this task, I upgraded from single models to powerful ensemble methods using t
 | **Baseline (Single)** | Decision Tree | 80.62% |
 | **Ensemble (Bagging)** | Random Forest | 78.92% |
 | **Ensemble (Boosting)** | XGBoost | 79.42% |
+
+## Task 9: Handling Imbalanced & Messy Real-World Data
+In this task, I addressed the "accuracy trap" associated with highly imbalanced datasets, a critical issue in real-world business problems like churn and fraud detection.
+
+### Key Steps Performed:
+* **Imbalance Visualization:** Visualized the target variable to highlight the stark disproportion between majority (No Churn) and minority (Churn) classes.
+* **Applying SMOTE:** Used the Synthetic Minority Over-sampling Technique (`imbalanced-learn`) to generate synthetic data for the minority class, perfectly balancing the training dataset.
+* **Before & After Comparison:** 
+    * Trained an initial model on the imbalanced data. 
+    * Retrained the model on the SMOTE-balanced data.
+    * Compared the results: The SMOTE model showed improved **Recall** for the minority class, meaning it successfully became much better at actually catching customers who are about to leave, rather than just playing the accuracy numbers game.
