@@ -2,6 +2,7 @@
 # Neurofive ML Track 🚀
 
 This repository contains my tasks and progress for the Neurofive Machine Learning Track.
+🌟 **Live Web App:** [Click here to view my deployed Titanic Survival Prediction App!](https://neurofive-ml-track-eaakmmh7anghdbzjxabggh.streamlit.app/)
 
 ## Task 1: Exploratory Data Analysis (EDA) on Titanic Dataset
 In this task, I performed basic EDA on the famous Titanic dataset to understand its shape, data types, and missing values before moving on to any machine learning models.
